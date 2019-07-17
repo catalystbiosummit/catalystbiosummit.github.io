@@ -5,9 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <!--
-Menu Icon made by Cole Bemis, accessed on flaticon.com
-(https://www.flaticon.com/free-icon/menu_462998#term=menu&page=1&position=2)
-Licensed under CC3.0BY
+Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Navigation-With-jQuery-CSS3.html
 -->
 <html>
 	<head>
@@ -33,7 +31,7 @@ Licensed under CC3.0BY
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>CATALYST</h1>
+							<h1 id="anchor-catalyst">CATALYST</h1>
 							<h3>a collaborative biosecurity summit</h3>
 							<h3>San Francisco Bay Area</h3>
 							<h3>October 4, 2019</h3>
@@ -49,7 +47,7 @@ Licensed under CC3.0BY
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Biotechnology is moving fast.</h2>
+							<h2 id="anchor-fast">Biotechnology is moving fast.</h2>
 						</header>
 						<div class="content">
 							<p><strong>You’ve heard the news:</strong> DNA synthesis and sequencing get
@@ -62,7 +60,7 @@ Licensed under CC3.0BY
 				<!-- Section -->
 				<section id="first">
 						<header>
-							<h2>Many futures are possible.</h2>
+							<h2 id="anchor-future">Many futures are possible.</h2>
 						</header>
 						<div class="content">
 							<p>It’s now easy to imagine a future where we eradicate diseases like malaria, manufacture
@@ -77,7 +75,7 @@ Licensed under CC3.0BY
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Its time to work together</h2>
+							<h2 id="anchor-together">Its time to work together</h2>
 						</header>
 						<div class="content">
 							<p>Catalyst Biosummit will bring together synthetic biologists and policymakers, academics
@@ -91,7 +89,7 @@ Licensed under CC3.0BY
 
 					<section id="first">
 						<header>
-							<h2>About the event</h2>
+							<h2 id="anchor-about">About the event</h2>
 						</header>
 						<div class="content">
 							<p>
@@ -103,7 +101,7 @@ Licensed under CC3.0BY
 
 					<section id="first">
 						<header>
-							<h2>The organizing team</h2>
+							<h2 id="anchor-team">The organizing team</h2>
 						</header>
 						<div class="content">
 							<p>Catalyst is being organized by a team of PhD students, early-career researchers, and biotechnology professionals, including the organizers behind the <a href="https://www.eastbaybiosecurity.org/">East Bay Biosecurity Group</a>. The conference is supported by a grant from the Effective Altruism <a href="https://app.effectivealtruism.org/funds/far-future">Long Term Future Fund</a>. We are being advised by <a href="https://cisac.fsi.stanford.edu/people/megan_palmer">Dr. Megan Palmer</a> and <a href="http://www.sculptingevolution.org/">Dr. Kevin Esvelt</a> and <strong>are currently seeking additional members for our advisory board.</strong> <a href="mailto:eastbaybiosec@gmail.com">Contact us</a> if you're interested.
@@ -114,6 +112,20 @@ Licensed under CC3.0BY
 				<!-- Copyright -->
 					<<div class="copyright">&copy; Theme made by: <a href="https://html5up.net">HTML5 UP</a>.</div>
 
+
+				<nav id="navigation" class="hide-nav-menu">
+					<a aria-label="mobile menu" class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<ul class="menu-left">
+						<li><a href="#anchor-catalyst">Catalyst</a></li>
+						<li><a href="#anchor-fast">Why?</a></li>
+						<li><a href="#anchor-about">About</a></li>
+						<li><a href="#anchor-team">The Team</a></li>
+					</ul>
+				</nav>
 			</div>
 
 		<!-- Scripts -->
@@ -123,6 +135,7 @@ Licensed under CC3.0BY
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/menu.js"></script>
 
 	</body>
 </html>
