@@ -1,27 +1,20 @@
 /* Speaker display */
+    .gallery.speakers {
+        text-align: center;
+    }
+
 	.speaker {
-        max-width: 12rem;
+        max-width: 14rem;
         text-align: center;
         padding: 1rem;
+        margin: 0 auto;
 
         img {
-            padding: 0rem;
             max-width: 100%;
         }
 
-        .speaker-name {
-            color: _palette(fg-bold);
-            font-family: _font(family-heading);
-            font-weight: _font(weight-heading-light);
-            letter-spacing: _font(kerning-heading);
-            line-height: 1.75;
-            margin: 0 0 (_size(element-margin) * 0.75) 0;
-            text-transform: uppercase;
-
-            ::after {
-                content: "";
-                display: block;
-              }
+        h4 {
+            margin-bottom: 0rem;
         }
 
         .speaker-title {
