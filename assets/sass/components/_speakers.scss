@@ -1,0 +1,32 @@
+/* Speaker display */
+	.speaker {
+        max-width: 12rem;
+        text-align: center;
+        padding: 1rem;
+
+        img {
+            padding: 0rem;
+            max-width: 100%;
+        }
+
+        .speaker-name {
+            color: _palette(fg-bold);
+            font-family: _font(family-heading);
+            font-weight: _font(weight-heading-light);
+            letter-spacing: _font(kerning-heading);
+            line-height: 1.75;
+            margin: 0 0 (_size(element-margin) * 0.75) 0;
+            text-transform: uppercase;
+
+            ::after {
+                content: "";
+                display: block;
+              }
+        }
+
+        .speaker-title {
+            display: block;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+    }
