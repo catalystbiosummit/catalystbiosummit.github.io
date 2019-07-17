@@ -10,7 +10,7 @@ $('.menu-left a').on('click', function() {
 	$('.menu-left').removeClass('collapse');
 });
 
-// Hide Header on on scroll down
+// Hide Header until scroll down on desktop
 var didScroll;
 var lastScrollTop = 0;
 var delta = $(window).height();
