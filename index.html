@@ -4,6 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!--
+Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Navigation-With-jQuery-CSS3.html
+-->
 <html>
 	<head>
 		<title>Catalyst Biosecurity Summit</title>
@@ -28,7 +31,7 @@
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>CATALYST</h1>
+							<h1 id="anchor-catalyst">CATALYST</h1>
 							<h3>a collaborative biosecurity summit</h3>
 							<h3>San Francisco Bay Area</h3>
 							<h3>October 4, 2019</h3>
@@ -44,49 +47,49 @@
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Biotechnology is moving fast.</h2>
+							<h2 id="anchor-fast">Biotechnology is moving fast.</h2>
 						</header>
 						<div class="content">
 							<p><strong>You’ve heard the news:</strong> DNA synthesis and sequencing get
-				            cheaper every year. Standardized biological parts and affordable tools mean that you
-				            can engineer bacteria in your garage. Cultured meat is coming to a supermarket near you.
-				            The first CRISPR babies will soon be learning to walk.</p>
+							cheaper every year. Standardized biological parts and affordable tools mean that you
+							can engineer bacteria in your garage. Cultured meat is coming to a supermarket near you.
+							The first CRISPR babies will soon be learning to walk.</p>
 						</div>
 					</section>
 
 				<!-- Section -->
 				<section id="first">
 						<header>
-							<h2>Many futures are possible.</h2>
+							<h2 id="anchor-future">Many futures are possible.</h2>
 						</header>
 						<div class="content">
 							<p>It’s now easy to imagine a future where we eradicate diseases like malaria, manufacture
-				            carbon-neutral plastics, and seed the deserts with drought-resistant crops. But we must
-				            also consider futures that include runaway gene drive extinctions, laboratory accidents we
-				            can't contain, and even the spread of engineered pathogens. We cannot launch new biotechnologies into the world and blindly hope they will disrupt it
-				            for the better. <strong>We must thoughtfully, collaboratively and creatively face the consequences
-				            of our innovation.</strong></p>
+							carbon-neutral plastics, and seed the deserts with drought-resistant crops. But we must
+							also consider futures that include runaway gene drive extinctions, laboratory accidents we
+							can't contain, and even the spread of engineered pathogens. We cannot launch new biotechnologies into the world and blindly hope they will disrupt it
+							for the better. <strong>We must thoughtfully, collaboratively and creatively face the consequences
+							of our innovation.</strong></p>
 						</div>
 					</section>
 
 				<!-- Section -->
 					<section id="first">
 						<header>
-							<h2>Its time to work together</h2>
+							<h2 id="anchor-together">Its time to work together</h2>
 						</header>
 						<div class="content">
 							<p>Catalyst Biosummit will bring together synthetic biologists and policymakers, academics
-					            and biohackers, and a broad range of professionals invested in biosecurity for a day of
-					            collaborative problem-solving. We aim to catalyze a diverse community of forward-looking
-					            individuals who will <strong>work together to engineer a future enhanced by biology and not
-					            endangered by it.</strong>
+								and biohackers, and a broad range of professionals invested in biosecurity for a day of
+								collaborative problem-solving. We aim to catalyze a diverse community of forward-looking
+								individuals who will <strong>work together to engineer a future enhanced by biology and not
+								endangered by it.</strong>
 							</p>
 						</div>
 					</section>
 
 					<section id="first">
 						<header>
-							<h2>About the event</h2>
+							<h2 id="anchor-about">About the event</h2>
 						</header>
 						<div class="content">
 							<p>
@@ -98,7 +101,7 @@
 
 					<section id="first">
 						<header>
-							<h2>The organizing team</h2>
+							<h2 id="anchor-team">The organizing team</h2>
 						</header>
 						<div class="content">
 							<p>Catalyst is being organized by a team of PhD students, early-career researchers, and biotechnology professionals, including the organizers behind the <a href="https://www.eastbaybiosecurity.org/">East Bay Biosecurity Group</a>. The conference is supported by a grant from the Effective Altruism <a href="https://app.effectivealtruism.org/funds/far-future">Long Term Future Fund</a>. We are being advised by <a href="https://cisac.fsi.stanford.edu/people/megan_palmer">Dr. Megan Palmer</a> and <a href="http://www.sculptingevolution.org/">Dr. Kevin Esvelt</a> and <strong>are currently seeking additional members for our advisory board.</strong> <a href="mailto:eastbaybiosec@gmail.com">Contact us</a> if you're interested.
@@ -109,6 +112,20 @@
 				<!-- Copyright -->
 					<<div class="copyright">&copy; Theme made by: <a href="https://html5up.net">HTML5 UP</a>.</div>
 
+
+				<nav id="navigation" class="hide-nav-menu">
+					<a aria-label="mobile menu" class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<ul class="menu-left">
+						<li><a href="#anchor-catalyst">Catalyst</a></li>
+						<li><a href="#anchor-fast">Why?</a></li>
+						<li><a href="#anchor-about">About</a></li>
+						<li><a href="#anchor-team">The Team</a></li>
+					</ul>
+				</nav>
 			</div>
 
 		<!-- Scripts -->
@@ -118,6 +135,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/menu.js"></script>
 
 	</body>
 </html>
