@@ -178,10 +178,6 @@ p {
   margin: 0 0 2rem 0;
 }
 
-ins, del {
-  text-decoration: inherit;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #003c3c;
   font-family: "Raleway", Helvetica, sans-serif;
