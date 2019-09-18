@@ -2815,6 +2815,96 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
 }
 
+#signup-container {
+  height: 3rem;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+#signup-container > #singular-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+#signup-container > #singular-form button {
+  width: 6rem;
+  height: 100%;
+  line-height: inherit;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#signup-container > #singular-form > button#trigger {
+  padding: 0;
+  width: 100%;
+  color: #c2f39a;
+  background-color: transparent;
+  z-index: 3;
+  font-size: 0.875rem;
+}
+#signup-container > #singular-form > #input-container {
+  z-index: 2;
+}
+#signup-container > #singular-form > #input-container > input {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 0 26% 0 3%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease 0.4s;
+}
+#signup-container > #singular-form > #input-container > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #c2f39a;
+  color: #ffffff;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease 0.4s;
+}
+#signup-container > #singular-form > button#trigger, #signup-container > #singular-form > #input-container, #signup-container > #singular-form > #success {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  opacity: 0;
+}
+#signup-container > #singular-form > button#trigger {
+  transition: all 0.4s ease;
+}
+#signup-container > #singular-form > #input-container {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.4s ease 0.4s;
+}
+#signup-container > #singular-form > #success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  z-index: 1;
+  transition: all 0.2s ease 0.4s;
+}
+#signup-container > #singular-form > button#trigger.shown, #signup-container > #singular-form > #input-container.shown, #signup-container > #singular-form > #success.shown, #signup-container > #singular-form > #input-container > button.shown, #signup-container > #singular-form > #input-container > input.shown {
+  transform: scale(1);
+  opacity: 1;
+}
+
 /* Wrapper */
 #wrapper {
   position: relative;

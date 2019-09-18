@@ -1,0 +1,108 @@
+// Derived from a pen by Yariv Fruend (https://codepen.io/YarivFrd/pen/NXomOV)
+#signup-container {
+    height: 3rem;
+    padding: 5px;
+    background-color: _palette(bg);
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+
+    &>#singular-form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: _palette(bg);
+    
+        button {
+            width: 6rem;
+            height: 100%;
+            line-height: inherit;
+            box-shadow: none;
+            padding: 0;
+            border: none;
+            outline: none;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+
+        &>button#trigger {
+            padding: 0;
+            width: 100%;
+            color: _palette(accent);
+            background-color: transparent;
+            z-index: 3;
+            font-size: 0.875rem;
+        }
+
+        &>#input-container {
+            z-index: 2;
+
+            &>input {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                background-color: _palette(bg);
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                padding: 0 26% 0 3%;
+                opacity: 0;
+                transform: scale(0);
+                transition: all .4s ease .4s;
+            }
+
+            &>button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: _palette(accent);
+                color: _palette(bg);
+                opacity: 0;
+                transform: scale(0);
+                transition: all .4s ease .4s;
+            }
+        }
+
+        &>button#trigger,
+        &>#input-container,
+        &>#success {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        &>button#trigger {
+            transition: all .4s ease;
+        }
+
+        &>#input-container {
+            transform: scale(1);
+            opacity: 1;
+            transition: all .4s ease .4s;
+        }
+
+        &>#success {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            z-index: 1;
+            transition: all .2s ease .4s;
+        }
+
+        &>button#trigger.shown,
+        &>#input-container.shown,
+        &>#success.shown,
+        &>#input-container>button.shown,
+        &>#input-container>input.shown {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
