@@ -1,3 +1,4 @@
+// Derived (with only minor modification) from a pen by Yariv Fruend (https://codepen.io/YarivFrd/pen/NXomOV)
 const sf = {};
 
 sf.container = document.querySelector('#signup-container');
