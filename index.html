@@ -29,28 +29,31 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section class="intro">
+					<section class="intro" id="signup-parent">
 						<header>
 							<h1 id="anchor-catalyst">CATALYST</h1>
 							<h2>a collaborative biosecurity summit</h2>
 							<h3>February 22, 2020</h3>
 							<h3><a href="http://thelaundrysf.com/">The Laundry</a>, San Francisco</h3>
 							<p></p>
+							<p>
+								<a href="#anchor-together"><button type="button" class="match-signup">Apply Now</button></a>
+							</p>	
 							<!-- Mailchimp Signup Form, using a pen by Yariv Fruend (https://codepen.io/YarivFrd/pen/NXomOV) -->
 							<div id="signup-container">
 								<form id="singular-form" action="https://gmail.us4.list-manage.com/subscribe/post?u=6a3a62b4b32f5a4329abff0d0&amp;id=353a151b02" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-									<button class="shown" type="button" id="trigger">Notify me</button>
+									<button class="shown" type="button" id="trigger">Get Updates</button>
 									<div id="input-container">
-											<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Sign up for email updates" required>
+											<input type="email" value="" name="EMAIL" class="email hidden" id="mce-EMAIL" placeholder="Sign up for email updates" required>
 											<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 											<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6a3a62b4b32f5a4329abff0d0_353a151b02" tabindex="-1" value=""></div>
-											<button type="button" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+											<button type="button" class="hidden" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
 									</div>
 									<div id="success">Thank you!</div>
 								</form>
 							</div>
-							<!--End mc_embed_signup-->
 							<p></p>
+							<!--End mc_embed_signup-->
 							<ul class="actions">
 								<li><a href="#fast" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -103,20 +106,20 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
 								and not endangered by it.</strong>
 							</p>
 							<p>
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSfxMZ5qy0QcFYsV2ZZmglngk9znXhEEgq2Xt4-TmboQBzEm2A/viewform?usp=sf_link">
+									<button type="button" class="large fit primary">Apply Now</button>
+								</a>
+							</p>	
+							<p>
 								We expect Catalyst participants to come from diverse backgrounds, and <strong>encourage
 								you to apply</strong> even if biosecurity is not your primary professional focus or you
 								are early in your career.
 							</p>
 							<p>
-								<a href="https://docs.google.com/forms/d/e/1FAIpQLSfxMZ5qy0QcFYsV2ZZmglngk9znXhEEgq2Xt4-TmboQBzEm2A/viewform?usp=sf_link">
-									<button type="button" class="large fit primary">Apply Now</button>
-								</a>
-							</p>
-							<p>
 								Biosecurity can be a controversial topic. Thoughtful, well-intentioned opinions differ
 								on how to balance caution and innovation. We hope to create a space where productive
 								conversations can be had across lines of disagreement. If you’re skeptical of this
-								event and its framing, consider that <strong>your perspective may add valuable
+								event and its framing, <strong>consider that your perspective may add valuable
 								diversity</strong> of thought to these conversations.
 							</p>
 						</div>

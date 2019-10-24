@@ -95,6 +95,15 @@
 			}
 		}
 
+		&.match-signup {
+			width: 100%;
+			background-color: _palette(bg);
+			border-radius: 1rem;
+			font-size: 0.875rem;
+			box-shadow: none;
+			margin-bottom: -0.5rem;
+		}
+
 		@include breakpoint('<=small') {
 			font-size: 0.7rem;
 			height: (_size(element-height) * 1.1);

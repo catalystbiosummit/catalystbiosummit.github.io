@@ -1576,6 +1576,18 @@ button.primary:active,
 .button.primary:active {
   background-color: #baeb93;
 }
+input[type=submit].match-signup,
+input[type=reset].match-signup,
+input[type=button].match-signup,
+button.match-signup,
+.button.match-signup {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  box-shadow: none;
+  margin-bottom: -0.5rem;
+}
 @media screen and (max-width: 736px) {
   input[type=submit],
 input[type=reset],
@@ -2863,7 +2875,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   padding: 0 26% 0 3%;
   opacity: 0;
   transform: scale(0);
-  transition: all 0.4s ease 0.4s;
 }
 #signup-container > #singular-form > #input-container > button {
   position: absolute;
@@ -2873,7 +2884,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   color: #ffffff;
   opacity: 0;
   transform: scale(0);
-  transition: all 0.4s ease 0.4s;
 }
 #signup-container > #singular-form > button#trigger, #signup-container > #singular-form > #input-container, #signup-container > #singular-form > #success {
   position: absolute;
@@ -2884,13 +2894,9 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   transform: scale(0);
   opacity: 0;
 }
-#signup-container > #singular-form > button#trigger {
-  transition: all 0.4s ease;
-}
 #signup-container > #singular-form > #input-container {
   transform: scale(1);
   opacity: 1;
-  transition: all 0.4s ease 0.4s;
 }
 #signup-container > #singular-form > #success {
   display: flex;
@@ -2898,11 +2904,14 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   align-items: center;
   font-weight: bold;
   z-index: 1;
-  transition: all 0.2s ease 0.4s;
 }
 #signup-container > #singular-form > button#trigger.shown, #signup-container > #singular-form > #input-container.shown, #signup-container > #singular-form > #success.shown, #signup-container > #singular-form > #input-container > button.shown, #signup-container > #singular-form > #input-container > input.shown {
   transform: scale(1);
   opacity: 1;
+  transition: all 0.2s ease 0.4s, color 1ms;
+}
+#signup-container > #singular-form > button#trigger.hidden, #signup-container > #singular-form > #input-container.hidden, #signup-container > #singular-form > #success.hidden, #signup-container > #singular-form > #input-container > button.hidden, #signup-container > #singular-form > #input-container > input.hidden {
+  transition: all 0.4s ease, color 1ms;
 }
 
 /* Wrapper */
