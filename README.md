@@ -8,7 +8,7 @@ We're all using Python 3. Hopefully you're not using Python 2.
     python -m http.server
 
 ### Sass
-We're committing compiled CSS to the repo. You can do so automatically with a git hook. Add the folloiwing to an
+We're committing compiled CSS to the repo. You can do so automatically with a git hook. Add the following to an
 executable file `.git/hooks/pre-commit`:
 
     #!/usr/bin/env bash
@@ -26,7 +26,7 @@ executable file `.git/hooks/pre-commit`:
 
     exit 0
 
-Alternatively, you can run run
+Alternatively, you can run:
 
     sass assets/sass/main.scss assets/css/main.css
 
