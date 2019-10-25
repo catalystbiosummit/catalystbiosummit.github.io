@@ -50,7 +50,6 @@
                 padding: 0 26% 0 3%;
                 opacity: 0;
                 transform: scale(0);
-                transition: all .4s ease .4s;
             }
 
             &>button {
@@ -61,7 +60,6 @@
                 color: _palette(bg);
                 opacity: 0;
                 transform: scale(0);
-                transition: all .4s ease .4s;
             }
         }
 
@@ -77,14 +75,9 @@
             opacity: 0;
         }
 
-        &>button#trigger {
-            transition: all .4s ease;
-        }
-
         &>#input-container {
             transform: scale(1);
             opacity: 1;
-            transition: all .4s ease .4s;
         }
 
         &>#success {
@@ -93,7 +86,6 @@
             align-items: center;
             font-weight: bold;
             z-index: 1;
-            transition: all .2s ease .4s;
         }
 
         &>button#trigger.shown,
@@ -103,6 +95,15 @@
         &>#input-container>input.shown {
             transform: scale(1);
             opacity: 1;
+            transition: all .2s ease .4s, color 1ms;
+        }
+
+        &>button#trigger.hidden,
+        &>#input-container.hidden,
+        &>#success.hidden,
+        &>#input-container>button.hidden,
+        &>#input-container>input.hidden {
+            transition: all .4s ease, color 1ms;
         }
     }
 }

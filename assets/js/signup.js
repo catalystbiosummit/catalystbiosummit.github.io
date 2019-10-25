@@ -14,13 +14,21 @@ sf.clickHandler = (e) => {
     switch (e.target) {
         case sf.trigger:
             sf.container.style.width = '100%'
-            e.target.classList.remove('shown');
-            sf.input.classList.add('shown');
-            sf.submitButton.classList.add('shown');
+            e.target.classList.replace('shown', 'hidden');
+            sf.input.classList.replace('hidden', 'shown');
+            sf.submitButton.classList.replace('hidden', 'shown');
             sf.input.focus();
             break;
         case sf.submitButton:
             sf.submitForm();
+            break;
+        default:
+            if (sf.input.classList.contains('shown')) {
+                sf.container.style.width = '';
+                sf.trigger.classList.replace('hidden', 'shown');
+                sf.input.classList.replace('shown', 'hidden');
+                sf.submitButton.classList.replace('shown', 'hidden');
+            }
             break;
     }
 }
@@ -44,4 +52,4 @@ sf.submitForm = () => {
 }
 
 sf.input.addEventListener('keypress', (e) => sf.handleInputKeypress(e));
-sf.container.addEventListener('click', (e) => sf.clickHandler(e));
+document.addEventListener('click', (e) => sf.clickHandler(e));
