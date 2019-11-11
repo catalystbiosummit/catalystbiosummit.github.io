@@ -3272,6 +3272,12 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   #wrapper > section.intro > header:before {
     margin-left: 0;
   }
+  #wrapper > section.intro > .content {
+    height: auto;
+  }
+  #wrapper > section.intro > .content > .intro-text {
+    padding-top: inherit;
+  }
   #wrapper > section:last-of-type > header:after {
     display: none;
   }
