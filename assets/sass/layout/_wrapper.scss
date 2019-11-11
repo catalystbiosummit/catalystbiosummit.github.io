@@ -325,6 +325,10 @@
 						> .content {
 							height: 100vh;
 							max-width: none;
+
+							&.intro-text {
+								padding-top: 16rem;
+							}
 						}
 					}
 
