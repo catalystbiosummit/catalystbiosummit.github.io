@@ -323,11 +323,14 @@
 						}
 
 						> .content {
-							height: 100vh;
 							max-width: none;
 
+							&.full-image {
+								height: 100vh;
+							}
+
 							> .intro-text {
-								padding-top: 16rem;
+								padding-top: 6rem;
 							}
 						}
 					}
