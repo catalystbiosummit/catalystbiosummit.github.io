@@ -2988,7 +2988,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   margin: 5rem 0 0 0;
 }
 #wrapper section > header {
-  padding: 0 10rem 0 0;
+  padding: 0 10rem 0 2.5rem;
   width: 35rem;
 }
 #wrapper section > .content {
@@ -3033,7 +3033,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     margin: 4rem 0 0 0;
   }
   #wrapper section > header {
-    padding: 0 8rem 0 0;
+    padding: 0 8rem 0 2rem;
     width: 33rem;
   }
   #wrapper section > .content {

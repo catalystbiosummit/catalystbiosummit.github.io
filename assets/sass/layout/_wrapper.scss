@@ -17,7 +17,7 @@ $right-col-vw: 67vw;
     margin: ($pad) 0 0 0;
 
     > header {
-      padding: 0 ($pad * 2) 0 0;
+      padding: 0 ($pad * 2) 0 ($pad / 2);
       width: _size(header-width) + ($pad * 2);
     }
 
