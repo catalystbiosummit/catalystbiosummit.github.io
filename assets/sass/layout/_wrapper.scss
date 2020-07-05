@@ -70,11 +70,6 @@ $right-col-vw: 67vw;
       > header {
         // Hack: Chrome's grid implementation screws up absolute element placement within a static child element.
 
-        // Set width on all child elements and right-align.
-        > * {
-          width: (_size(header-width) - $pad);
-        }
-
         // Line.
         &:before {
           margin-left: calc(#{$left-col-vw} - #{$pad * 2});
