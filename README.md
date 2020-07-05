@@ -1,13 +1,19 @@
 # catalystbiosummit.github.io
+
 Minimalist website for the Catalyst Collaborative Biosecurity Summit
 
-
 ### Starting a simple HTTP server
+
 We're all using Python 3. Hopefully you're not using Python 2.
 
     python -m http.server
 
 ### Sass
+
+While developing, you will probably want to run:
+
+    sass --watch assets/sass/main.scss assets/css/main.css
+
 We're committing compiled CSS to the repo. You can do so automatically with a git hook. Add the following to an
 executable file `.git/hooks/pre-commit`:
 
