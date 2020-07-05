@@ -194,7 +194,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1.1;
@@ -2575,6 +2575,7 @@ a.arrow:before {
 }
 .gallery a {
   border-bottom: 0;
+  display: block;
   margin: 1.25rem 0 0 1.25rem;
   outline: 0;
   position: relative;
@@ -2774,7 +2775,7 @@ a.arrow:before {
   margin: 0 auto;
 }
 .speaker img {
-  max-width: 70%;
+  max-width: 100%;
 }
 .speaker h4 {
   margin-bottom: 0rem;
@@ -2948,14 +2949,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   align-items: center;
 }
 #wrapper > section.intro > header {
-  padding-top: 4rem;
-  width: 100%;
-}
-#wrapper > section.intro > header > * {
-  margin-left: auto;
-}
-#wrapper > section.intro > header:before {
-  left: auto;
+  padding-top: 3rem;
 }
 #wrapper > section.intro > .content {
   max-width: none;
@@ -2994,7 +2988,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   margin: 5rem 0 0 0;
 }
 #wrapper section > header {
-  padding: 0 10rem 0 5rem;
+  padding: 0 10rem 0 2.5rem;
   width: 35rem;
 }
 #wrapper section > .content {
@@ -3022,19 +3016,8 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
 #wrapper > section > .content > section > header {
   width: 32rem;
 }
-#wrapper > section.intro > header > * {
-  width: 20rem;
-}
-#wrapper > section.intro > header:before {
-  margin-left: calc(33vw - 10rem);
-}
-@media screen and (max-width: 1152px) {
-  #wrapper > section.intro > header > * {
-    width: 100%;
-  }
-  #wrapper > section.intro > header:before {
-    margin-left: 0;
-  }
+#wrapper > section.intro > header {
+  max-width: 100%;
 }
 #wrapper > section:last-of-type > header:after {
   left: calc( 33vw - 5rem - 0.25rem + 1px );
@@ -3050,7 +3033,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     margin: 4rem 0 0 0;
   }
   #wrapper section > header {
-    padding: 0 8rem 0 4rem;
+    padding: 0 8rem 0 2rem;
     width: 33rem;
   }
   #wrapper section > .content {
@@ -3078,27 +3061,12 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   #wrapper > section > .content > section > header {
     width: 30rem;
   }
-  #wrapper > section.intro > header > * {
-    width: 21rem;
+  #wrapper > section.intro > header {
+    max-width: 100%;
   }
-  #wrapper > section.intro > header:before {
-    margin-left: calc(33vw - 8rem);
-  }
-}
-@media screen and (max-width: 1280px) and (max-width: 1152px) {
-  #wrapper > section.intro > header > * {
-    width: 100%;
-  }
-  #wrapper > section.intro > header:before {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 1280px) {
   #wrapper > section:last-of-type > header:after {
     left: calc( 33vw - 4rem - 0.25rem + 1px );
   }
-}
-@media screen and (max-width: 1280px) {
   #wrapper .copyright {
     padding: 0 4rem;
   }
@@ -3186,21 +3154,15 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
     margin-bottom: 0;
   }
   #wrapper > section.intro > header {
-    margin-bottom: 0;
-  }
-  #wrapper > section.intro > header ul.actions {
-    display: none;
+    padding-top: calc(2 * 4rem);
   }
   #wrapper > section.intro > header > * {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+    max-width: 100%;
   }
-  #wrapper > section.intro > header > ul.actions {
-    margin-left: -1rem;
-  }
-  #wrapper > section.intro > header:before {
-    margin-left: 0;
+  #wrapper > section.intro > header h1,
+#wrapper > section.intro > header h2,
+#wrapper > section.intro > header h3 {
+    margin-bottom: 0;
   }
   #wrapper > section.intro > .content {
     height: auto;
@@ -3233,9 +3195,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   #wrapper > section > footer {
     padding: 0 4rem 4rem 4rem;
   }
-  #wrapper > section.intro > header {
-    padding: 8rem 4rem 5rem 4rem;
-  }
   #wrapper .copyright {
     padding: 0 4rem 4rem 4rem;
   }
@@ -3259,9 +3218,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   #wrapper > section > footer {
     padding: 0 2rem 3rem 2rem;
   }
-  #wrapper > section.intro > header {
-    padding: 5.5rem 2rem 2.5rem 2rem;
-  }
   #wrapper .copyright {
     padding: 0 2rem 2rem 2rem;
   }
@@ -3284,9 +3240,6 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
   #wrapper > section > footer {
     padding: 0 1.5rem 2.25rem 1.5rem;
-  }
-  #wrapper > section.intro > header {
-    padding: 4.875rem 1.5rem 1.875rem 1.5rem;
   }
   #wrapper .copyright {
     padding: 0 1.5rem 1.5rem 1.5rem;
@@ -3316,9 +3269,6 @@ body.is-preload #wrapper:before {
 #wrapper > section.intro {
   transition: opacity 1s ease;
   opacity: 1;
-}
-#wrapper > section.intro > header {
-  transition: transform 1s ease;
 }
 #wrapper > section.intro > .content {
   transition: transform 1s ease;
