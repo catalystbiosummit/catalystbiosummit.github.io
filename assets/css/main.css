@@ -2575,7 +2575,6 @@ a.arrow:before {
 }
 .gallery a {
   border-bottom: 0;
-  display: block;
   margin: 1.25rem 0 0 1.25rem;
   outline: 0;
   position: relative;
