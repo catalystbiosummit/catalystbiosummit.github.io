@@ -17,7 +17,7 @@ $right-col-vw: 67vw;
     margin: ($pad) 0 0 0;
 
     > header {
-      padding: 0 ($pad * 2) 0 ($pad);
+      padding: 0 ($pad * 2) 0 0;
       width: _size(header-width) + ($pad * 2);
     }
 
@@ -68,22 +68,7 @@ $right-col-vw: 67vw;
     // Intro.
     &.intro {
       > header {
-        // Hack: Chrome's grid implementation screws up absolute element placement within a static child element.
-
-        // Line.
-        &:before {
-          margin-left: calc(#{$left-col-vw} - #{$pad * 2});
-        }
-
-        @include breakpoint("<=medium") {
-          > * {
-            width: 100%;
-          }
-
-          &:before {
-            margin-left: 0;
-          }
-        }
+        max-width: 100%;
       }
     }
 
@@ -130,13 +115,6 @@ $right-col-vw: 67vw;
 
     > footer {
       padding: 0 $pad ($pad * $tbFactor) $pad;
-    }
-
-    // Intro.
-    &.intro {
-      > header {
-        padding: (($pad * 1.25) + 3rem) $pad ($pad * 1.25) $pad;
-      }
     }
   }
 
@@ -293,20 +271,7 @@ $right-col-vw: 67vw;
       align-items: center;
 
       > header {
-        padding-top: 4rem;
-
-        // Hack: Chrome's grid implementation screws up absolute element placement within a static child element.
-        width: 100%;
-
-        // Set width on all child elements and right-align.
-        > * {
-          margin-left: auto;
-        }
-
-        // Line.
-        &:before {
-          left: auto;
-        }
+        padding-top: 3rem;
       }
 
       > .content {
@@ -488,25 +453,6 @@ $right-col-vw: 67vw;
 
         > header {
           margin-bottom: 0;
-
-          ul.actions {
-            display: none;
-          }
-
-          // Hack: Undo Chrome grid hack.
-          > * {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
-          }
-
-          > ul.actions {
-            margin-left: (_size(element-margin) * -0.5);
-          }
-
-          &:before {
-            margin-left: 0;
-          }
         }
 
         > .content {
@@ -599,10 +545,6 @@ body.is-mobile {
     &.intro {
       transition: opacity 1s ease;
       opacity: 1;
-
-      > header {
-        transition: transform 1s ease;
-      }
 
       > .content {
         transition: transform 1s ease;
