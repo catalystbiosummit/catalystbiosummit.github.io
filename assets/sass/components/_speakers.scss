@@ -9,7 +9,7 @@
 }
 
 .speaker {
-  max-width: 14rem;
+  max-width: 12.5rem;
   text-align: center;
   padding: 1rem;
   margin: 0 auto;
@@ -27,4 +27,16 @@
     font-size: 0.8rem;
     line-height: 1.5;
   }
+}
+
+.featured-talk-speaker {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.25rem 0 0 -1.25rem;
+  width: calc(100% + 1.25rem);
+}
+
+.featured-talk-title {
+  max-width: 25rem;
+  margin: auto;
 }
