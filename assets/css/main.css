@@ -2151,6 +2151,9 @@ a.arrow {
     max-width: 12rem;
     font-size: 0.9rem;
     margin: auto; }
+    @media screen and (max-width: 1152px) {
+      .featured-talk .talk-title {
+        max-width: 20rem; } }
 
 /* Feature Icons */
 ul.feature-icons {
@@ -2329,7 +2332,8 @@ ul.feature-icons {
       #wrapper > section.intro > .content {
         max-width: none; }
         #wrapper > section.intro > .content.full-image {
-          padding: 0px; }
+          padding: 0px;
+          background: #c2f39a; }
         #wrapper > section.intro > .content > .intro-text {
           padding-top: 6rem; }
     #wrapper > section:last-of-type > header:before {

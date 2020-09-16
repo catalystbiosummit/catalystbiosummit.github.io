@@ -64,22 +64,6 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
     <meta name="twitter:card" content="summary_large_image" />
-    <style type="text/css">
-      .two-column-wrapper {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        font-size: 0.85rem;
-        justify-items: stretch;
-        grid-gap: 2px;
-        background: #c2f39a;
-      }
-      .two-column-wrapper div {
-        padding: 1rem;
-        background: white;
-      }
-    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -155,6 +139,22 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
             of participants who required it, so that finances wouldn’t be an
             obstacle to attending.
           </p>
+
+          <h3>Quotes from Participants</h3>
+          <div class="two-column-wrapper">
+            <div class="testimonial">
+              <p class="quote">
+                It is amazing how much happened in one day.  You had us do more than talk about ideas, we actually demonstrated that we can work together to solve the challenges.
+              </p>
+              <span class="attribution">—Beth Vitalis</span>
+            </div>
+            <div class="testimonial">
+              <p class="quote">
+                It seems really good to have more conferences like this, where there's a shared interest but everybody comes from different fields so it's less obviously hierarchal.
+              </p>
+              <span class="attribution">—excerpt from <a href="https://forum.effectivealtruism.org/posts/myp9Y9qJnpEEWhJF9/linch-s-shortform?commentId=Qenfxp3HRYnK2ndjc">Linch Zhang's writeup</a></span>
+            </div>
+          </div>
         </div>
       </section>
       <section id="conversations">
@@ -178,7 +178,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
           <p>These three Long Conversations were:</p>
           <h3>How can we steer towards a good future for biotechnology?</h3>
           <div class="gallery speakers">
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/megan_palmer.png" />
               <a href="http://www.meganjpalmer.com/">
                 <h4>Megan Palmer</h4>
@@ -187,7 +187,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/genya_dana.png" />
               <a href="https://www.weforum.org/agenda/authors/genya-dana/">
                 <h4>Genya Dana</h4>
@@ -196,7 +196,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/jun_axup.png" />
               <a href="http://junaxup.com/">
                 <h4>Jun Axup</h4>
@@ -205,7 +205,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/karen_ingram.png" />
               <a href="http://www.kareningram.com/">
                 <h4>Karen Ingram</h4>
@@ -217,7 +217,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
           </div>
           <h3>How should the biological sciences handle potentially dangerous research ideas?</h3>
           <div class="gallery speakers">
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/rosie_campbell.png" />
               <a href="https://rosiecampbell.me/">
                 <h4>Rosie Campbell</h4>
@@ -226,7 +226,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/tim_stearns.png" />
               <a href="http://stearnslab.stanford.edu/">
                 <h4>Tim Stearns</h4>
@@ -235,7 +235,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/david_relman.png" />
               <a href="https://profiles.stanford.edu/david-relman/">
                 <h4>David Relman</h4>
@@ -247,7 +247,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
           </div>
           <h3>How can we productively discuss the risks from biotechnology?</h3>
           <div class="gallery speakers">
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/anders_sandberg.png" />
               <a href="https://www.fhi.ox.ac.uk/team/anders-sandberg/">
                 <h4>Anders Sandberg</h4>
@@ -256,7 +256,7 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/maria_chavez.png" />
               <a href="https://www.biosummit.org/maria-chavez">
                 <h4>Maria Chavez</h4>
@@ -265,9 +265,9 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
                 >
               </a>
             </div>
-            <div class="speaker portrait">
+            <div class="speaker">
               <img class="speaker" src="/img/speakers/jane_metcalfe.png" />
-              <a href="https://neo.life/about/"">
+              <a href="https://neo.life/about/">
                 <h4>Jane Metcalfe</h4>
                 <span class="speaker-title"
                   >Founder, NEO.LIFE</span
@@ -410,107 +410,68 @@ Menu adapted from: https://www.jqueryscript.net/menu/Smart-Sticky-Responsive-Nav
           </div>
           <h3>Featured Talks</h3>
 
-          <div class="featured-talk-speaker">
-            <div class="speaker portrait">
-              <img class="speaker" src="/img/speakers/tara_sell.png"/>
-              <a href="http://www.centerforhealthsecurity.org/our-people/sell/"
-                ><h4>Tara Kirk Sell</h4></a>
-            </div> 
-            <div class="featured-talk-title">
-              <p>
-                Workshop on Technologies to Address Global Catastrophic Biological Risks
-                <a href="https://www.slideshare.net/CatalystACollaborati/technologies-to-address-global-catastrophic-biological-risks-tara-kirk-sell">(Slides)</a>
-              </p>
-              <p>
-                Workshop on Event 201: A Global Pandemic Exercise
-              </p>
-            </div>
-           <div>
-          <div class="featured-talk-speaker">
-            <div class="speaker portrait">
-              <img class="speaker" src="/img/speakers/clem_fortman.png"/>
-              <a href="https://ebrc.org/clem-fortman/">
-                <h4>Clem Fortman</h4>
-              </a>
-            </div> 
-            <div class="featured-talk-title">
-              <p>
-                Malice Analysis: Security Training for the Engineering Biology Community
-              </p>
-            </div>
-           <div>
-
-
-          <ul>
-            <li>
-              <strong
-                >Broad-Spectrum Antivirals: An essential tool for
-                biosecurity</strong
-              >,
-              <a href="https://www.linkedin.com/in/jassipannu/">Jassi Pannu</a>,
-              Stanford Medicine <a href="https://www.slideshare.net/CatalystACollaborati/broadspectrum-antivirals-an-essential-tool-for-biosecurity">(Slides)</a>
-            </li>
-            <li>
-              <strong
-                >A metagenomic perspective on ecology, biosecurity, and public
-                health</strong
-              >, <a href="https://twitter.com/thebasepoint">Joshua Batson</a>,
-              Chan-Zuckerberg Biohub <a href="https://www.slideshare.net/CatalystACollaborati/a-metagenomic-perspective-on-ecology-biosecurity-and-public-health-joshua-batson">(Slides)</a>
-            </li>
-            
-          </ul>
           <div class="gallery speakers">
-            <div class="speaker portrait">
-              <strong
-              >A metagenomic perspective on ecology, biosecurity, and public
-              health</strong
-            >
-              <img class="speaker" src="/img/speakers/megan_palmer.png" />
-              <a href="http://www.meganjpalmer.com/">
-                <h4>Megan Palmer</h4>
-                <span class="speaker-title"
-                  >Senior Research Scholar, CISAC, Stanford University</span
-                >
+            <div class="featured-talk">
+              <div class="speaker">
+                <img class="speaker" src="/img/speakers/tara_sell.png"/>
+                <a href="http://www.centerforhealthsecurity.org/our-people/sell/"
+                  ><h4>Tara Kirk Sell</h4>
+                  <span class="speaker-title">Senior Scholar, Johns Hopkins Center for Health Security</span>
               </a>
-            </div>
-            <div class="speaker portrait">
-              <strong
-              >Broad-Spectrum Antivirals: An essential tool for
-              biosecurity</strong
-            >,
-              <img class="speaker" src="/img/speakers/genya_dana.png" />
-              <a href="https://www.weforum.org/agenda/authors/genya-dana/">
-                <h4>Genya Dana</h4>
-                <span class="speaker-title"
-                  >Head of Precision Medicine, World Economic Forum</span
-                >
+                </div> 
+                <div class="talk-title">
+                  <p>
+                    Workshop on Technologies to Address Global Catastrophic Biological Risks
+                    <a href="https://www.slideshare.net/CatalystACollaborati/technologies-to-address-global-catastrophic-biological-risks-tara-kirk-sell">(Slides)</a>
+                  </p>
+                </div>
+              </div>
+              <div class="featured-talk">
+                <div class="speaker">
+                  <img class="speaker" src="/img/speakers/joshua_batson.png"/>
+                  <a href="https://twitter.com/thebasepoint">
+                    <h4>Joshua Batson</h4>
+                  <span class="speaker-title">
+                      Senior Research Scientist, Chan Zuckerberg Biohub</span></a>
+                </div>
+                <div class="talk-title">
+                  <p>
+                    A metagenomic perspective on ecology, biosecurity, and public
+                    health
+                    <a href="https://www.slideshare.net/CatalystACollaborati/a-metagenomic-perspective-on-ecology-biosecurity-and-public-health-joshua-batson">(Slides)</a>
+                    </p>
+                </div>
+              </div>
+            <div class="featured-talk">
+              <div class="speaker">
+                <img class="speaker" src="/img/speakers/clem_fortman.png"/>
+                <a href="https://ebrc.org/clem-fortman/">
+                  <h4>Clem Fortman</h4>
+                  <span class="speaker-title">Director of Security Engagements, EBRC</span>
+                </a>
+              </div> 
+              <div class="talk-title">
+                <p>
+                  Malice Analysis: Security Training for the Engineering Biology Community
+                </p>
+              </div>
+          </div>
+          <div class="featured-talk">
+            <div class="speaker">
+              <img class="speaker" src="/img/speakers/jassi_pannu.png"/>
+              <a href="https://www.linkedin.com/in/jassipannu/">
+                <h4>Jassi Pannu</h4>
+                <span class="speaker-title">School of Medicine, Stanford</span>
               </a>
-            </div>
-            <div class="speaker portrait">
-              <strong>
-                Malice Analysis: Security Training for the Engineering Biology Community
-              </strong>
-              <img class="speaker" src="/img/speakers/jun_axup.png" />
-              <a href="http://junaxup.com/">
-                <h4>Jun Axup</h4>
-                <span class="speaker-title"
-                  >Scientific Director & Partner, IndieBio</span
-                >
-              </a>
-            </div>
-            <div class="speaker portrait">
-              <strong>
-                Workshop on Technologies to Address Global Catastrophic Biological Risks
-              </strong>
-              <img class="speaker" src="/img/speakers/karen_ingram.png" />
-              <a href="http://www.kareningram.com/">
-                <h4>Karen Ingram</h4>
-                <span class="speaker-title"
-                  >Creative Director, Stanford d.school Fellow</span
-                >
-              </a>
+            </div> 
+            <div class="talk-title">
+              Broad-Spectrum Antivirals:
+              An&nbsp;essential tool for
+              biosecurity<a href="https://www.slideshare.net/CatalystACollaborati/broadspectrum-antivirals-an-essential-tool-for-biosecurity">(Slides)</a>
             </div>
           </div>
+        </div>
+
           <h3>Lightning Talks</h3>
           <div class="two-column-wrapper">
             <div>

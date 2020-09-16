@@ -36,5 +36,9 @@
     max-width: 12rem;
     font-size: 0.9rem;
     margin: auto;
+
+    @include breakpoint("<=medium") {
+      max-width: 20rem;
+    }
   }
 }

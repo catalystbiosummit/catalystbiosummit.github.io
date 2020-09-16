@@ -295,6 +295,7 @@ $right-col-vw: 67vw;
 
         &.full-image {
           padding: 0px;
+          background: _palette(accent);
         }
 
         > .intro-text {
