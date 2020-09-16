@@ -1,0 +1,35 @@
+.testimonial {
+  position: relative;
+  z-index: 1; /* this can be increased if needed */
+
+  .quote {
+    quotes: "\201c""\201d";
+
+    :before,
+    :after {
+      font-size: 7rem;
+      font-weight: bold;
+      opacity: 0.5;
+      color: #c2f39a;
+      position: absolute;
+      z-index: -1;
+    }
+
+    :before {
+      top: -4rem;
+      left: 0rem;
+      content: open-quote;
+    }
+
+    :after {
+      bottom: -3rem;
+      right: 0.5rem;
+      content: close-quote;
+    }
+  }
+
+  .attribution {
+    float: right;
+    font-style: italic;
+  }
+}

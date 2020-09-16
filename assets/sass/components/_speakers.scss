@@ -29,14 +29,12 @@
   }
 }
 
-.featured-talk-speaker {
+.featured-talk {
   display: flex;
-  flex-wrap: wrap;
-  margin: -1.25rem 0 0 -1.25rem;
-  width: calc(100% + 1.25rem);
-}
 
-.featured-talk-title {
-  max-width: 25rem;
-  margin: auto;
+  .talk-title {
+    max-width: 12rem;
+    font-size: 0.9rem;
+    margin: auto;
+  }
 }
