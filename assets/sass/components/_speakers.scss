@@ -1,25 +1,30 @@
 /* Speaker display */
-    .gallery.speakers {
-        text-align: center;
-    }
+.gallery.speakers {
+  text-align: center;
 
-	.speaker {
-        max-width: 14rem;
-        text-align: center;
-        padding: 1rem;
-        margin: 0 auto;
+  a {
+    margin: auto;
+    width: auto;
+  }
+}
 
-        img {
-            max-width: 100%;
-        }
+.speaker {
+  max-width: 14rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
 
-        h4 {
-            margin-bottom: 0rem;
-        }
+  img {
+    max-width: 100%;
+  }
 
-        .speaker-title {
-            display: block;
-            font-size: 0.8rem;
-            line-height: 1.5;
-        }
-    }
+  h4 {
+    margin-bottom: 0rem;
+  }
+
+  .speaker-title {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}

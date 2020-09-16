@@ -1194,20 +1194,20 @@ button,
   display: inline-block;
   position: relative;
   padding-bottom: 0px;
-  transition: color .35s ease; }
+  transition: color 0.35s ease; }
 
 .menu-left a:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0s ease, background .35s ease; }
+  transition: width 0s ease, background 0.35s ease; }
 
 .menu-left a:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 0;
@@ -1215,12 +1215,12 @@ button,
   height: 2px;
   width: 0;
   background: #000;
-  transition: width .35s ease; }
+  transition: width 0.35s ease; }
 
 .menu-left a:hover:before {
   width: 100%;
   background: #000;
-  transition: width .35s ease; }
+  transition: width 0.35s ease; }
 
 .menu-left a:hover:after {
   width: 100%;
@@ -1232,7 +1232,7 @@ button,
   top: 0;
   left: 0;
   width: 100%;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   background: rgba(255, 255, 255, 0.92);
   z-index: 3;
   will-change: transform;
@@ -1244,8 +1244,8 @@ button,
 
 #navigation header nav .logo {
   float: left;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -1253,7 +1253,7 @@ button,
   color: black; }
 
 #navigation header nav .logo:after {
-  content: '';
+  content: "";
   display: table;
   clear: both; }
 
@@ -1276,7 +1276,7 @@ button,
   clear: both; }
 
 .hide-nav-menu {
-  transform: translateY(-120% !important);
+  transform: translateY(-120%) !important;
   -webkit-transform: translateY(-120%) !important; }
 
 ul.menu-left {
@@ -1292,7 +1292,7 @@ ul.menu-left {
   z-index: 10; }
 
 ul.menu-left:before {
-  content: '';
+  content: "";
   display: table;
   clear: both; }
 
@@ -1327,7 +1327,7 @@ ul.menu-left.collapse {
   width: 100%;
   margin-top: 4px;
   background-color: #000;
-  transition: all .25s; }
+  transition: all 0.25s; }
 
 /* Form */
 form {
@@ -2126,6 +2126,9 @@ a.arrow {
 /* Speaker display */
 .gallery.speakers {
   text-align: center; }
+  .gallery.speakers a {
+    margin: auto;
+    width: auto; }
 
 .speaker {
   max-width: 14rem;
