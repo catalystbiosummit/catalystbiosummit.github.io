@@ -7,6 +7,22 @@
 $left-col-vw: 33vw;
 $right-col-vw: 67vw;
 
+/* Two column section */
+.two-column-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  font-size: 0.85rem;
+  justify-items: stretch;
+  grid-gap: 2px;
+  background: #c2f39a;
+}
+.two-column-wrapper div {
+  padding: 1rem;
+  background: white;
+}
+
 /* Wrapper */
 
 @mixin wrapper-pad($pad) {
@@ -279,6 +295,7 @@ $right-col-vw: 67vw;
 
         &.full-image {
           padding: 0px;
+          background: _palette(accent);
         }
 
         > .intro-text {

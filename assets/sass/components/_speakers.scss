@@ -1,25 +1,44 @@
 /* Speaker display */
-    .gallery.speakers {
-        text-align: center;
+.gallery.speakers {
+  text-align: center;
+
+  a {
+    margin: auto;
+    width: auto;
+  }
+}
+
+.speaker {
+  max-width: 12.5rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+  }
+
+  h4 {
+    margin-bottom: 0rem;
+  }
+
+  .speaker-title {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
+.featured-talk {
+  display: flex;
+
+  .talk-title {
+    max-width: 12rem;
+    font-size: 0.9rem;
+    margin: auto;
+
+    @include breakpoint("<=medium") {
+      max-width: 20rem;
     }
-
-	.speaker {
-        max-width: 14rem;
-        text-align: center;
-        padding: 1rem;
-        margin: 0 auto;
-
-        img {
-            max-width: 100%;
-        }
-
-        h4 {
-            margin-bottom: 0rem;
-        }
-
-        .speaker-title {
-            display: block;
-            font-size: 0.8rem;
-            line-height: 1.5;
-        }
-    }
+  }
+}

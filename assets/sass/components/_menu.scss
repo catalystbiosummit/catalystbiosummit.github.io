@@ -17,22 +17,22 @@
   display: inline-block;
   position: relative;
   padding-bottom: 0px;
-  transition: color .35s ease;
+  transition: color 0.35s ease;
 }
 
 .menu-left a:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0s ease, background .35s ease;
+  transition: width 0s ease, background 0.35s ease;
 }
 
 .menu-left a:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 0;
@@ -40,13 +40,13 @@
   height: 2px;
   width: 0;
   background: #000;
-  transition: width .35s ease;
+  transition: width 0.35s ease;
 }
 
 .menu-left a:hover:before {
   width: 100%;
   background: #000;
-  transition: width .35s ease;
+  transition: width 0.35s ease;
 }
 
 .menu-left a:hover:after {
@@ -60,21 +60,24 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   background: rgba(255, 255, 255, 0.92);
   z-index: 3;
   will-change: transform;
-  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: background 0.3s,
+    -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1),
+    background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   transform: translateY(0);
   -webkit-transform: translateY(0);
 }
 
 #navigation header nav .logo {
   float: left;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -83,7 +86,7 @@
 }
 
 #navigation header nav .logo:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -103,12 +106,18 @@
   list-style: none;
 }
 
-#navigation header nav ul li a { display: block; }
+#navigation header nav ul li a {
+  display: block;
+}
 
-#navigation ul { clear: both; }
+#navigation ul {
+  clear: both;
+}
 
 .hide-nav-menu {
-  transform: translateY(-120% !important); -webkit-transform: translateY(-120%) !important; }
+  transform: translateY(-120%) !important;
+  -webkit-transform: translateY(-120%) !important;
+}
 
 ul.menu-left {
   display: block;
@@ -124,7 +133,7 @@ ul.menu-left {
 }
 
 ul.menu-left:before {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -145,14 +154,18 @@ ul.menu-left.collapse {
   padding: 8px 8px;
 }
 
-.nav-toggle.open span:first-child { transform: rotate(45deg) translate(4.4px, 4.4px); }
+.nav-toggle.open span:first-child {
+  transform: rotate(45deg) translate(4.4px, 4.4px);
+}
 
 .nav-toggle.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-.nav-toggle.open span:last-child { transform: rotate(-45deg) translate(4.4px, -4.4px); }
+.nav-toggle.open span:last-child {
+  transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
 
 .nav-toggle span {
   position: relative;
@@ -161,5 +174,5 @@ ul.menu-left.collapse {
   width: 100%;
   margin-top: 4px;
   background-color: #000;
-  transition: all .25s;
+  transition: all 0.25s;
 }
