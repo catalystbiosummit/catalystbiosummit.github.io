@@ -12,7 +12,7 @@ We're all using Python 3. Hopefully you're not using Python 2.
 
 While developing, you will probably want to run:
 
-    sass --watch assets/sass/main.scss assets/css/main.css
+    sass --watch assets/sass/main.scss:assets/css/main.css
 
 We're committing compiled CSS to the repo. You can do so automatically with a git hook. Add the following to an
 executable file `.git/hooks/pre-commit`:
@@ -34,6 +34,6 @@ executable file `.git/hooks/pre-commit`:
 
 Alternatively, you can run:
 
-    sass assets/sass/main.scss assets/css/main.css
+    sass assets/sass/main.scss:assets/css/main.css
 
 before committing.
