@@ -1,39 +1,21 @@
-# catalystbiosummit.github.io
+# catalystbiosummit.github.io (archived)
 
-Minimalist website for the Catalyst Collaborative Biosecurity Summit
+Archive of [Catalyst](https://catalystbiosummit.com/), a one-day collaborative
+biosecurity summit held in San Francisco on February 22, 2020. The site is no
+longer updated.
 
-### Starting a simple HTTP server
+It's plain static HTML served by GitHub Pages: `index.html`, `retrospective.html`
+(the organizers' retrospective, originally posted to the
+[EA Forum](https://forum.effectivealtruism.org/posts/zda3ewg65XZxxdkeA/retrospective-on-catalyst-a-100-person-biosecurity-summit)),
+and one stylesheet. There is no build step and no JavaScript; `.nojekyll` tells
+Pages to serve the files as-is. The original Sass/jQuery version is in git history.
 
-We're all using Python 3. Hopefully you're not using Python 2.
+To preview locally:
 
-    python -m http.server
+    python3 -m http.server
 
-### Sass
+(GitHub Pages serves `/retrospective` from `retrospective.html`; the simple
+Python server needs the `.html` suffix.)
 
-While developing, you will probably want to run:
-
-    sass --watch assets/sass/main.scss:assets/css/main.css
-
-We're committing compiled CSS to the repo. You can do so automatically with a git hook. Add the following to an
-executable file `.git/hooks/pre-commit`:
-
-    #!/usr/bin/env bash
-
-    # Make sure that the 'sass' command exists
-    # @see http://stackoverflow.com/a/677212/329911
-    command -v sass >/dev/null 2>&1 || {
-    echo >&2 "Sass does not appear to be available. Unable to re-compile stylesheets";
-    exit 1;
-    }
-
-    # Define our paths and stylesheets
-    sass assets/sass/main.scss assets/css/main.css --style compressed
-    echo "Compiled main.scss -> main.css (compressed)"
-
-    exit 0
-
-Alternatively, you can run:
-
-    sass assets/sass/main.scss:assets/css/main.css
-
-before committing.
+Design adapted from Paradigm Shift by [HTML5 UP](https://html5up.net), used under
+the CCA 3.0 license (see `LICENSE.txt`).
