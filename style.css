@@ -222,9 +222,16 @@ h3, h4 { font-size: 0.875rem; }
 
 /* Retrospective page header and title. */
 .retro-intro > header { padding-bottom: 2rem !important; }
+#wrapper > .retro-intro > .content { max-width: 44rem !important; padding: 3rem var(--pad) 0 !important; }
+.retro-intro .byline { margin-bottom: 0; }
+.retro-intro .retro-title { margin-top: 0; }
 .retro-title {
   font: 600 1.6rem/1.4 var(--heading);
   letter-spacing: 0.05em;
   text-transform: none;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 1152px) {
+  #wrapper > .retro-intro > .content { padding: var(--pad) !important; }
 }
