@@ -156,7 +156,8 @@ h3, h4 { font-size: 0.875rem; }
 }
 .speakers-4 { grid-template-columns: repeat(2, minmax(0, 12.5rem)); column-gap: 3rem; }
 .speaker { padding: 1rem 0; }
-.speaker img { margin: 0 auto; }
+.speaker img { margin: 0 auto; border-radius: 50%; filter: url(#duotone); }
+.speaker:hover img, .speaker:focus-within img { filter: none; }
 .speaker a { border: 0; }
 .speaker h4 { margin: 0.5rem 0 0; }
 .speaker-title { display: block; font-size: 0.8rem; line-height: 1.5; }

@@ -30,6 +30,17 @@
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
+    <!-- Duotone for speaker photos: dark green shadows, light green highlights. -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <filter id="duotone" color-interpolation-filters="sRGB">
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer>
+          <feFuncR type="table" tableValues="0 0.761" />
+          <feFuncG type="table" tableValues="0.235 0.953" />
+          <feFuncB type="table" tableValues="0.235 0.604" />
+        </feComponentTransfer>
+      </filter>
+    </svg>
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Intro -->
