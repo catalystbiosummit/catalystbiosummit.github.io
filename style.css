@@ -76,6 +76,7 @@ h3, h4 { font-size: 0.875rem; }
   justify-self: end;
   text-align: right;
   width: calc(25rem + var(--pad) * 2);
+  max-width: 100%;
   padding: 0 calc(var(--pad) * 2) 0 calc(var(--pad) / 2);
 }
 #wrapper > section > .content {
